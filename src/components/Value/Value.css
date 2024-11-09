@@ -1,3 +1,14 @@
+.image-container img {
+    overflow: hidden;
+    border-radius: 15rem 15rem 0 0; /* Creates an oval shape */
+    border: 8px solid rgba(128, 128, 128, 0.5); /* Gray color with 50% opacity */
+    margin-left: 5rem; /* Adjust as needed */
+    width: 100%;
+    max-width: 450px;
+    height: auto; /* Allows height to adjust and maintain oval shape */
+}
+
+
 .v-container>div{
     flex:1
 }
@@ -14,17 +25,41 @@
 .accordionItem{
     background: white;
     border: 0.8px solid rgba(128,128,128,0.143);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
-.image-container img {
-    overflow: hidden;
-    border-radius: 15rem 15rem 0 0; /* Creates an oval shape */
-    border: 8px solid rgba(128, 128, 128, 0.5); /* Gray color with 50% opacity */
-    margin-left: 5rem; /* Adjust as needed */
-    width: 100%;
-    max-width: 450px;
-    height: auto; /* Allows height to adjust and maintain oval shape */
+.accordionItem.expanded{
+    box-shadow: var(--shadow);
+    border-radius: 6px;
 }
+
+
+.accordionButton{
+    background:white;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.icon{
+    padding: 10px;
+    background: #eeeeff;
+    border-radius: 5px;
+}
+
+.icon svg{
+    fill: var(--blue)
+}
+
+.accordionButton .primaryText{
+    font-size: 1.1rem;
+}
+
+
+
 
 
    
